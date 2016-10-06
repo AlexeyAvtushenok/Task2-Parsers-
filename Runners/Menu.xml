@@ -1,0 +1,131 @@
+    <Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.menu.by" xsi:schemaLocation="http://www.menu.by Menu.xsd">
+    <Cold-snacks>
+        <FoodDescription>
+        <Photo>
+            Директория
+        </Photo>
+            <Name>
+                Ассорти Рыбное
+            </Name>
+            <Description>
+                Слабосоленая форель, семга
+            </Description>
+            <Portion>
+                100/20/15
+            </Portion>
+            <Price>
+                10
+            </Price>
+        </FoodDescription>
+
+        <FoodDescription>
+            <Photo>
+                Директория1
+            </Photo>
+            <Name>
+                Тарталетки с красной икрой
+            </Name>
+            <Description>
+                Тарталетки с красной икрой
+            </Description>
+            <Portion>
+                60/50
+            </Portion>
+            <Price>
+                15
+            </Price>
+        </FoodDescription>
+
+        <FoodDescription>
+            <Photo>
+                Директория2
+            </Photo>
+            <Name>
+                Закуска по-русски
+            </Name>
+            <Description>
+                Кусочки атлантической сельди с отварным картофелем, луком, лимоном и зеленью
+            </Description>
+            <Portion>
+                70/50/2/10
+            </Portion>
+            <Price>
+                13
+            </Price>
+        </FoodDescription>
+    </Cold-snacks>
+    <Hot-snacks>
+        <FoodDescription>
+            <Photo>
+                Директория3
+            </Photo>
+            <Name>
+                Лобио с шампиньонами
+            </Name>
+            <Description>
+                фасоль с шампиньонами и грецким орехом
+            </Description>
+            <Portion>
+                150/5
+            </Portion>
+            <Price>
+                18
+            </Price>
+        </FoodDescription>
+        <FoodDescription>
+            <Photo>
+                Директория4
+            </Photo>
+            <Name>
+                Жульен
+            </Name>
+            <Description>
+                1.с курицей 2. с грибами
+            </Description>
+            <Portion>
+                120/1
+            </Portion>
+            <Price>
+                21
+            </Price>
+        </FoodDescription>
+    </Hot-snacks>
+    <Breakfast>
+        <FoodDescription>
+            <Photo>
+                Директория5
+            </Photo>
+            <Name>
+                Глазунья
+            </Name>
+            <Description>
+                2 яйца (на выбор: ветчина, сыр)
+            </Description>
+            <Portion>
+                150
+            </Portion>
+            <Price>
+                5
+            </Price>
+        </FoodDescription>
+
+        <FoodDescription>
+            <Photo>
+                Директория6
+            </Photo>
+            <Name>
+                Омлет
+            </Name>
+            <Description>
+
+            </Description>
+            <Portion>
+                100
+            </Portion>
+            <Price>
+                3
+            </Price>
+        </FoodDescription>
+    </Breakfast>
+</Menu>
+

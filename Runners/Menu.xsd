@@ -1,0 +1,32 @@
+    <?xml version ="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.menu.by"
+        xmlns:tns="http://www.menu.by"
+        elementFormDefault="qualified">
+
+    <element name="Menu" type="tns:Type"></element>
+    <complexType name="Type">
+        <sequence>
+        <element name="Cold-snacks" type="tns:Food"></element>
+        <element name="Hot-snacks" type="tns:Food"></element>
+        <element name="Breakfast" type="tns:Food"></element>
+        </sequence>
+    </complexType>
+    <complexType name="Food">
+        <sequence>
+        <element name="FoodDescription" type="tns:FoodDescriptionType" maxOccurs = "25"></element>
+        </sequence>
+    </complexType>
+    <complexType name="FoodDescriptionType">
+        <sequence>
+            <element name="Photo" type="ID"></element>
+            <element name="Name" type="string"></element>
+            <element name="Description" type="string"></element>
+            <element name="Portion" type="string"></element>
+            <element name="Price" type="string"></element>
+        </sequence>
+    </complexType>
+
+
+
+</schema>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MyDOM">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MyDOM/out/artifacts/MyDOMByAvtushenok_jar/MyDOM.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
