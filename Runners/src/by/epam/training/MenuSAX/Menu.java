@@ -6,7 +6,7 @@ import java.util.List;
  * Created by Алексей on 25.09.2016.
  */
 public class Menu {
-    private List<Section> coldSnacks = new ArrayList<>();
+    private List<Section> coldSnacks = new ArrayList<>();// эм, а если бы у ная было 10 разных секций в меню, мы бы делали 10 коллекций?
     private List<Section> hotSnacks = new ArrayList<>();
     private List<Section> breakfasts = new ArrayList<>();
 
