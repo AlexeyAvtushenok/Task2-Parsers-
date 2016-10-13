@@ -16,6 +16,8 @@ import java.util.List;
 /**
  * Created by Алексей on 26.09.2016.
  */
+// постоянно встречающиеся константные неименованные строки
+// и оформить задачу отдельным классом, а не пихать код в main тебе что не позволило?
 public class MenuDomParser {
     public static void main(String[] args) throws IOException, SAXException {
         DOMParser domParser = new DOMParser();
