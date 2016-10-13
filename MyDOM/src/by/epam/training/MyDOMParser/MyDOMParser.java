@@ -7,19 +7,27 @@ import java.util.regex.Pattern;
 /**
  * Created by Алексей on 27.09.2016.
  */
-public class MyDOMParser {
+// Общее - не поминаешь до конца разницу между использованием статических и нестатических методов
+// а лепишь в код по пронципу - вот сейчас мне здесь так удобнее написать, ибо чуть более гибккую архитектуру приложения.... <дальше добавишь сам>
+// понамешаны статические и нестатические методы
+// твоим статическим вообще здесь не место
+public class MyDOMParser {// не используем Myв именовании
+    // категорически не используем
     private Document document;
     private String header;
 
     public Document getDocument(){
         return Document.getDocument();
     }
+    
     public void parse(String location) {
         document = getDocument();
         try {
             getInformationFromFile(location, document);
         } catch (FileNotFoundException e) {
-            System.out.println("File is not found");
+            System.out.println("File is not found");// ё-театр, ну ты же код пишешь, чтобы его потом использовать
+            // ну надо же задумаваться, КАК его будут использвоать, и что при этом получат
+            // в случае ошибки парсер потихому выведет что-то на консоль И НИКОМУ ОБ ЭТОМ НЕ СКАЖЕТ
         }
 
     }
@@ -35,27 +43,32 @@ public class MyDOMParser {
             Element parentElement = new Element();
 
 
-        StringBuilder flag = new StringBuilder("0");
+        StringBuilder flag = new StringBuilder("0");// почему "0"?
             try {
                 String s;
-                while ((s = in.readLine()) != null) {
-                    sb.append(s);
+                while ((s = in.readLine()) != null) {// прочитал очередную строку
+                    sb.append(s);// добавил прочитанную строку в StringBuilder
                    // if(isOpenTagCorrect(sb)||isCloseTagCorrect(sb)||isTextCorrect(sb))
-                    parentElement = elementLogic(sb, document, parentElement, flag);
+                    parentElement = elementLogic(sb, document, parentElement, flag);// и на каждой итерации ухаю в метод
+                    // ВСЮ прочитанную часть файла
+                    // где голова?
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                e.printStackTrace();// см. выше
             }
             return sb;
     }
     private static Element elementLogic(StringBuilder sb, Document document, Element parentElement, StringBuilder flag){
         Element element = new Element();
-        Pattern pattern = Pattern.compile("<([^/].*?)(( +?.*?=.*?)*?)>");
+        Pattern pattern = Pattern.compile("<([^/].*?)(( +?.*?=.*?)*?)>");// все константные значение в коде должны быть поименованы
+        // т.е. вынесены в final static поля
+        // исключения только для строк при логгировани и при выбрасывании исключений
         Matcher matcher = pattern.matcher(sb.toString());
         Pattern pattern1 = Pattern.compile("</(.*?)(( +?.*?=.*?)*?)>");
         Matcher matcher1 = pattern1.matcher(sb.toString());
         Pattern pattern2 = Pattern.compile("([^\\s<])([А-Яа-яёЁ\\d\\s\\\\.,/]+)");
         Matcher matcher2 = pattern2.matcher(sb.toString());
+        // даже разбираться не буду, что делают patter за номерами 1,2 и соответствующие номерные матчеры
         if ( matcher.find())
         {
             if (document.getRootElement() == null) {
