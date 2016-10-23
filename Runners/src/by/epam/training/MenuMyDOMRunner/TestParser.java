@@ -13,6 +13,7 @@ import java.util.List;
 /**
  * Created by Алексей on 27.09.2016.
  */
+// см комментарий в MenuDOM
 public class TestParser {
     public static void main(String[] args) throws FileNotFoundException {
         MyDOMParser parser = new MyDOMParser();

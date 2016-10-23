@@ -3,8 +3,9 @@ package by.epam.training.MyDOMParser;
 /**
  * Created by Алексей on 28.09.2016.
  */
+// equaks? hashCode? toString?
 public class Attribute {
-    String name;
+    String name;// где атрибуты доступа?
     String data;
 
     public String getName() {

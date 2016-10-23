@@ -35,7 +35,8 @@ public class StAXMenuParser {
         List<Section> breakfast = new ArrayList<>();
         Section section = new Section();
         MenuTagName elementname = null;
-        int flag = 0;
+        int flag = 0;//я за плинтусом
+        // а если у тебя будет 100 секций в xml-ке - что делать будем?Также флагами определять, в какой мы сейчас секции?
         while (reader.hasNext()) {
             int type = reader.next();
             switch (type) {

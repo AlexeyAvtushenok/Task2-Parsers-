@@ -1,8 +1,11 @@
     <Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.menu.by" xsi:schemaLocation="http://www.menu.by Menu.xsd">
-    <Cold-snacks>
+    // где id-шники, зоятбы у блюд?
+   // похалявил, создал самую простейшую структуру документа
+        <Cold-snacks>
         <FoodDescription>
         <Photo>
-            Директория
+            Директория// какая еще директория
+            // где ссылка на рисунок?
         </Photo>
             <Name>
                 Ассорти Рыбное

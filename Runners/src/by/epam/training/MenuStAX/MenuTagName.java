@@ -6,7 +6,8 @@ package by.epam.training.MenuStAX;
 public enum MenuTagName {
     MENU, COLD_SNACKS, HOT_SNACKS, BREAKFAST, FOODDESCRIPTION, PHOTO, NAME, DESCRIPTION, PORTION, PRICE;
     public static MenuTagName getElementTagName (String element){
-        switch (element){
+        switch (element){// забудьте о том, что существует switch на строках,
+                // правило же минимизации мест изменения чего-то в коде при изменении имени параметра вроже же очень простое
             case "Menu": return MENU;
             case "Cold-snacks" : return COLD_SNACKS;
             case "Hot-snacks" : return HOT_SNACKS;
